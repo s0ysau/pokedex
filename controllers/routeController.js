@@ -7,7 +7,7 @@ const viewController = require('./viewsController')
 // INDEX
 router.get('/', dataController.index, viewController.index)
 // NEW
-router.get('/', viewController.newView)
+router.get('/new', viewController.newView)
 // DELETE
 router.delete('/:id', dataController.destroy, viewController.redirectHome)
 // UPDATE
