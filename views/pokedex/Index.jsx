@@ -9,10 +9,10 @@ class Index extends React.Component {
 				<ul>
 					{
 						pokemon.map((poke) => {
-							const {Name, Type, Weakness, _id} = poke
+							const {Name, Type, Weakness, readyToFight, _id} = poke
 							return(
 								<li key={_id}>
-									<a href={`/pokedex/${_id}`}>{Name}</a> is a {Type} type. <br/>
+									<a href={`/pokedex/${_id}`}>{Name}</a> is a {Type} type and {readyToFight? 'it\'s ready to fight' : 'it\'s not ready to fight'}. <br/>
 									<form method="POST" action={`/pokedex/${_id}?_method=DELETE`}>
 										<input type="submit" value={`Delete ${Name}`} />
 									</form>

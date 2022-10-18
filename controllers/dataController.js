@@ -30,6 +30,7 @@ const dataController = {
     },
     // UPDATE 
     update(req, res, next) {
+        req.body.readyToFight = req.body.readyToFight === 'on'? true : false;
         Pokemon.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedPokemon) => {
             if(err){
                 res.status(400).send({
@@ -43,6 +44,7 @@ const dataController = {
     },
     // CREATE 
     create (req, res, next) {
+        req.body.readyToFight = req.body.readyToFight === 'on'? true : false;
         Pokemon.create(req.body, (err, createdPokemon) => {
             if(err){
                 res.status(400).send({
