@@ -12,7 +12,7 @@ class Index extends React.Component {
 							const {Name, Type, Weakness, _id} = poke
 							return(
 								<li key={_id}>
-									<a href={`/pokedex/${_id}`}>{Name}</a> is a {Type} Type. <br/>
+									<a href={`/pokedex/${_id}`}>{Name}</a> is a {Type} type. <br/>
 									<form method="POST" action={`/pokedex/${_id}?_method=DELETE`}>
 										<input type="submit" value={`Delete ${Name}`} />
 									</form>

@@ -6,7 +6,7 @@ class Default extends React.Component {
     return (
         <html>
             <head>
-                //css 
+                <link rel="stylesheet" href="/css/app.css"></link>
                 <title>POKEDEX</title>
             </head>
             <nav>

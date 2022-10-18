@@ -1,0 +1,13 @@
+@import url('//fonts.googleapis.com/css?family=Istok+Web');
+
+body {
+    background-color: lightblue;
+    background-image: url("../images/Vermilion_Forest.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
